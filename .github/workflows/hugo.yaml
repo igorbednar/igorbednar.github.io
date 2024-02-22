@@ -57,13 +57,14 @@ jobs:
           HUGO_ENV: production
         run: |
           hugo \
+            --source "./my-blog" \
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./public
+          path: ./my-blog/public
 
   # Deployment job
   deploy:
