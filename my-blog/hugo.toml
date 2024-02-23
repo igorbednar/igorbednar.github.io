@@ -2,5 +2,18 @@ baseURL = 'https://bdnr.org/'
 languageCode = 'en-us'
 title = 'The ChronoBit'
 theme = 'soho'
+
 [params]
     description = 'blog'
+    profilePicture = "images/avatar.jpg"
+
+    
+
+[menu]
+
+  [[menu.main]]
+  name = "Posts"
+  weight = 100
+  identifier = "posts"
+  url = "/posts/"
+  
